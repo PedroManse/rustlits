@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 dotenvy = "0.15.7"
-sqlx = { version = "0.7.3", features = ["sqlite", "runtime-tokio"] }
-tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"] }
+sqlx = { version = "0.7.3", features = ["sqlite", "runtime-tokio", "postgres", "macros"], default-features = false }
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"], default-features = false }
